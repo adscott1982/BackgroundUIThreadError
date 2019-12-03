@@ -1,0 +1,25 @@
+﻿<Window x:Class="BackgroundUIThreadError.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BackgroundUIThreadError"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <local:BackgroundTextBlock Grid.Row="0" x:Name="Decorator1" IsBusyIndicatorShowing="False"/>
+        <local:BackgroundTextBlock Grid.Row="1" x:Name="Decorator2" IsBusyIndicatorShowing="False"/>
+        <local:BackgroundTextBlock Grid.Row="2" x:Name="Decorator3" IsBusyIndicatorShowing="False"/>
+        <local:BackgroundTextBlock Grid.Row="3" x:Name="Decorator4" IsBusyIndicatorShowing="False"/>
+        <local:BackgroundTextBlock Grid.Row="4" x:Name="Decorator5" IsBusyIndicatorShowing="False"/>
+        <local:BackgroundTextBlock Grid.Row="5" x:Name="Decorator6" IsBusyIndicatorShowing="False"/>
+    </Grid>
+</Window>
